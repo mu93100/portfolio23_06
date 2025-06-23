@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     /* border: 1px dotted lightpink; */
+    cursor:crosshair;
 }
 
 body {
@@ -67,22 +68,22 @@ p {
 
 .close-btn {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 50px;
+    right: 50px;
     background: #fff;
     border: none;
     font-size: 20px;
-    cursor:crosshair;
     color: #333;
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
+    border-radius: 15%;
+    /* width: 28px;
+    height: 28px; */
     line-height: 24px;
     text-align: center;
-    box-shadow: 0 1px 4px rgb(31, 252, 2);
     transition: background 0.2s;
 }
 
 .close-btn:hover {
-    background: #f0f0f0;
+    text-shadow: 0.02em 0.02em 0.03em white,
+    0 0 1em blue,
+    0 0 0.12em blue;
 }
