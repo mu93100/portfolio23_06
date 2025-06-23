@@ -1,42 +1,88 @@
-*{
+* {
     box-sizing: border-box;
-    border: 1px dotted lightpink;
+    /* border: 1px dotted lightpink; */
 }
-body{
-    border: 1px dotted rgb(230, 28, 180);
+
+body {
+    /* border: 1px dotted rgb(230, 28, 180); */
     margin: 0 1rem 0 1rem;
     display: flex;
     flex-direction: column;
 }
-main{
-    background-image: url(/img/Frame\ 1.png);
+
+main {
+    /* background-image: url(/img/Frame1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: aquamarine;
-    height: 100rem;
+    height: 100rem; */
 }
-header{
+
+header {
     display: flex;
     flex-direction: row;
     align-items: end;
     padding: 0;
     margin: 0;
-    border: 1px dotted rgb(28, 230, 95);
+    /* border: 1px dotted rgb(28, 230, 95); */
 }
-p{
+
+p {
     font-family: "Doto", sans-serif;
-    font-size: 1rem;
+    font-size: 1.2 rem;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
         "ROND" 0;
-    color: blue;
+    color: black;
     letter-spacing: .15rem;
-    margin: 0;
+    margin: 0 0 0 1rem;
 }
+
 .logo {
     width: 3rem;
     padding: 0;
-    border: 1px dotted rgb(28, 230, 95);
+    /* border: 1px dotted rgb(28, 230, 95); */
+}
+
+/* ouvrir un bloc text depuis la nav avec design figma */
+/* #mon-image {
+    display: none;
+    /* L'image est cachée au départ */
+    max-width: 300px;
+/*} */
+
+#image-container {
+    display: none;
+    /* Caché au départ */
+    position: relative;
+    width: max-content;
+    margin-top: 20px;
+}
+
+#fond_about {
+    width: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #fff;
+    border: none;
+    font-size: 20px;
+    cursor:crosshair;
+    color: #333;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    line-height: 24px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgb(31, 252, 2);
+    transition: background 0.2s;
+}
+
+.close-btn:hover {
+    background: #f0f0f0;
 }
