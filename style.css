@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    border: 1px dotted lightpink;
+}
+body{
+    border: 1px dotted rgb(230, 28, 180);
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    background-image: url(/img/Frame\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aquamarine;
+    height: 100rem;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding: 0;
+    margin: 0;
+    border: 1px dotted rgb(28, 230, 95);
+}
+p{
+    font-family: "Doto", sans-serif;
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "ROND" 0;
+    color: blue;
+    letter-spacing: .15rem;
+    margin: 0;
+}
+.logo {
+    width: 3rem;
+    padding: 0;
+    border: 1px dotted rgb(28, 230, 95);
+}
