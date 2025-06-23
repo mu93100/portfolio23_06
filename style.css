@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     /* border: 1px dotted lightpink; */
-    cursor:crosshair;
+    cursor: crosshair;
 }
 
 body {
@@ -51,7 +51,7 @@ p {
 /* #mon-image {
     display: none;
     /* L'image est cachée au départ */
-    max-width: 300px;
+max-width: 300px;
 /*} */
 
 #image-container {
@@ -84,6 +84,52 @@ p {
 
 .close-btn:hover {
     text-shadow: 0.02em 0.02em 0.03em white,
-    0 0 1em blue,
-    0 0 0.12em blue;
+        0 0 1em blue,
+        0 0 0.12em blue;
+}
+
+/* Styles de base pour le menu */
+.nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Centrer horizontalement */
+}
+
+.nav ul li {
+    margin: 0 20px;
+}
+
+.nav ul li a {
+    display: block;
+    /* padding: 15px 10px; */
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+.nav ul li a:hover,
+.nav ul li a:focus {
+    /* color: #ffd700; */
+    /* Jaune doré au survol */
+    outline-offset: unset;
+}
+
+/* Responsive : menu vertical sur petits écrans */
+@media (max-width: 600px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
 }
