@@ -23,12 +23,12 @@ header {
     display: flex;
     flex-direction: row;
     align-items: end;
-    padding: 0;
+    padding: 0 0 0.2em 0;
     margin: 0;
     /* border: 1px dotted rgb(28, 230, 95); */
 }
 
-p {
+p, .nav {
     font-family: "Doto", sans-serif;
     font-size: 1.2 rem;
     font-optical-sizing: auto;
@@ -89,9 +89,7 @@ max-width: 300px;
 }
 
 /* Styles de base pour le menu */
-.nav {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 .nav ul {
     list-style: none;
@@ -111,15 +109,14 @@ max-width: 300px;
     /* padding: 15px 10px; */
     text-decoration: none;
     font-weight: 600;
-    transition: background-color 0.3s, color 0.3s;
+    /* transition: background-color 0.3s, color 0.3s; */
     border-radius: 4px;
 }
 
-.nav ul li a:hover,
-.nav ul li a:focus {
+.nav ul li a:hover, .nav ul li a:focus {
     /* color: #ffd700; */
     /* Jaune doré au survol */
-    outline-offset: unset;
+    border-bottom: 0.1em solid black;
 }
 
 /* Responsive : menu vertical sur petits écrans */
