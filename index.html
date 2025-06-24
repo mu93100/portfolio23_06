@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M U R I E L E H L I N G E R</title>
@@ -9,55 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-
+      <div class="containerLogo">
         <img class="logo" src="/img/logoM.jpg" alt="">
 
         <div>
-            <p>muriel ehlinger</p>
-            <p>web développeuse ultra junior</p>
+          <p>muriel ehlinger</p>
+          <p>développeuse web ultra junior</p>
         </div>
-        <div class="nav">
-          <ul>
-            <li><a href="apropos">À propos</a></li>
-            <li><a href="portfolio">Portfolio</a></li>
-            <li><a href="cv">CV</a></li>
-            <li><a href="contact">Contact</a></li>
-          </ul>
-        </div>
+      </div>  
 
-
+      <div class="nav">
+        <ul>
+          <li><a href="portfolio">Portfolio</a></li>
+          <li><a href="cv">CV</a></li>
+          <a id="afficher_a_propos">À propos</a>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
+
     <main>
-        <button id="afficher-btn">Afficher l'image</button>
-        <div id="image-container">
-            <button class="close-btn" id="close-btn">fermer</button>
-            <img id="fond_about"
-                src="/img/Frame1.png"
-                alt="fond_about" />
-        </div>
+      <!--  texte défilant -->
+      <div class="marquee-container" id="marqueeContainer" onclick="disparaitre()">
+        <span class="marquee-text">Je recherche un stage du 08/09 au 31/10/25</span>
+      </div>
 
-        <script>
-            const bouton = document.getElementById('afficher-btn');
-            const imageContainer = document.getElementById('image-container');
-            const closeBtn = document.getElementById('close-btn');
-
-            bouton.addEventListener('click', function () {
-                imageContainer.style.display = 'block'; // Affiche le conteneur avec l'image
-            });
-
-            closeBtn.addEventListener('click', function () {
-                imageContainer.style.display = 'none'; // Masque le conteneur avec l'image
-            });
-        </script>
+      <!-- <button id="afficher-btn">Afficher l'image</button> -->
+      <div id="image-container">
+        <button class="close-btn" id="close-btn">fermer</button>
+        <img id="fond_a_propos" src="/img/Frame1.png" alt="fond_a_propos" />
+      </div>
     </main>
-    <div>
 
-    </div>
-</body>
+    <script src="/script.js"></script>
+  </body>
 
 </html>
 <!-----------------apparition de l'image progressive /perplexity
