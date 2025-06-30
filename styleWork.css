@@ -41,6 +41,5 @@
 .workText a{
     font-size: .6rem;
     font-weight: 100;
-    font-style: normal; 
-    padding-top: -20px;
+    /* padding-top: -20px; */
 }
